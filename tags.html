@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags </title>
+    <style>
+        img {
+            width: 400;
+            height: 600;
+        }
+    </style>
+</head>
+<body>
+    Nhập vào Tên
+    <input type="text" id="name">
+    Nhập vào tuổi
+    <input type="text" id="age">
+    Nhập vào quê quán
+    <input type="text" id="address">
+    <button onclick="show()">Ấn đê</button>
+    <h1 id="kq"></h1>
+        <script>
+            function show() {
+                let name = document.getElementById("name").value;
+                let age = document.getElementById("age").value;
+                let address = document.getElementById("address").value;
+                document.getElementById('kq').innerHTML = name + " " + age + "tuổi ở" + address
+            }
+        </script>
+</body>
+</html>
